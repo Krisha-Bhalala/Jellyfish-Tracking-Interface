@@ -2,7 +2,7 @@
 
 ## Description
 
-This project implements a simple virtual drag-and-drop interaction using an image of a bee. The image can be moved on a canvas with a draggable rectangle (representing a "net"). If the rectangle overlaps the bee image, a message is displayed, indicating whether the jellyfish is "in the net" or "out of the net."
+This project implements a simple virtual drag-and-drop interaction using an image of a jellyfish. The image can be moved on a canvas with a draggable rectangle (representing a "net"). If the rectangle overlaps the jellyfish image, a message is displayed, indicating whether the jellyfish is "in the net" or "out of the net."
 
 This project utilizes Python, Google Colab, OpenCV, and JavaScript to display and interact with the canvas.
 
