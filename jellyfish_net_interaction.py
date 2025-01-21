@@ -22,20 +22,20 @@ filename = list(uploaded.keys())[0]  # Gets the name of the uploaded file
 image = cv2.imread(filename)  # Reads the uploaded image into OpenCV format (BGR)
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)  # Converts the image from BGR to RGB format
 
-# Define sizes for the bee image and the canvas
-bee_size = 100  # Desired size of the bee image (maximum dimension in pixels)
+# Define sizes for the jellyfish image and the canvas
+jellyfish_size = 100  # Desired size of the jellyfish image (maximum dimension in pixels)
 canvas_size = 400  # Dimensions of the canvas (400x400 pixels)
 
 # Calculate the aspect ratio of the image for proper resizing
 aspect_ratio = image.shape[1] / image.shape[0]  # Width divided by height
 if aspect_ratio > 1:  # If the image is wider than it is tall
-    new_width = bee_size  # Set the width to the bee size
-    new_height = int(bee_size / aspect_ratio)  # Calculate height while maintaining aspect ratio
+    new_width = jellyfish_size  # Set the width to the bee size
+    new_height = int(jellyfish_size / aspect_ratio)  # Calculate height while maintaining aspect ratio
 else:  # If the image is taller than it is wide
-    new_height = bee_size  # Set the height to the bee size
-    new_width = int(bee_size * aspect_ratio)  # Calculate width while maintaining aspect ratio
+    new_height = jellyfish_size  # Set the height to the jellyfish size
+    new_width = int(jellyfish_size * aspect_ratio)  # Calculate width while maintaining aspect ratio
 
-# Resize the image to fit within the bee_size constraints
+# Resize the image to fit within the jellyfish_size constraints
 image = cv2.resize(image, (new_width, new_height))  # Resize the image to (new_width, new_height)
 
 # Create a blank white canvas
